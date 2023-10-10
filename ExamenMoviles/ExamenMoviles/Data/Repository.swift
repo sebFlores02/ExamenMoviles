@@ -8,17 +8,11 @@
 import Foundation
 
 struct API {
-    static let base = "https://image.tmdb.org/"
     static let baseList = "https://api.themoviedb.org/3/movie/popular"
-
-    struct routes {
-        static let img = "/t/p/original/"
-    }
 }
 
 protocol MovieProtocol {
     func getMovieCollection() async -> MovieCollection?
-    func getMovieInfo(path: String) async -> Movie?
 }
 
 class MovieRepository: MovieProtocol {
@@ -34,10 +28,5 @@ class MovieRepository: MovieProtocol {
         let url = URL(string: "\(API.baseList)")!
         print(url)
         return await nservice.getMovieCollection(url: url)
-    }
-    func getMovieInfo(path: String) async -> Movie? {
-        let url = URL(string: "\(API.base)\(API.routes.img)/\(path)")!
-        print(url)
-        return await nservice.getMovieInfo(url: url)
     }
 }

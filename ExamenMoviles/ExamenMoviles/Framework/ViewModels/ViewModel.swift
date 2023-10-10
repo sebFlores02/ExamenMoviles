@@ -10,25 +10,17 @@ import Foundation
 class ContentViewModel: ObservableObject {
     @Published var movieCollection = [MovieBase]()
     
-    var movieCollectionRequirement: MovieInfoRequirement
+    var movieCollectionRequirement: MovieCollectionRequirement
     
-    init(movieCollectionRequirement: MovieInfoRequirement = MovieInfoRequirement.shared) {
+    init(movieCollectionRequirement: MovieCollectionRequirement = MovieCollectionRequirement.shared) {
         self.movieCollectionRequirement = movieCollectionRequirement
     }
-    
-//    func getUnit() async {
-//        let movieInfo = await movieCollectionRequirement.getMovieInfo(path: "/5gzzkR7y3hnY8AD1wXjCnVlHba5.jpg")
-//        print(movieInfo)
-//        
-//    }
     
     func getList() async {
         let movieRepository = MovieRepository()
         let result = await movieRepository.getMovieCollection()
         
-        for i in 1...result!.results.count-1 {
-            let movieInfo = await movieRepository.getMovieInfo(path: )
-            print(result)
+        for i in 0...result!.results.count-1 {
 
             let tempMovie = MovieBase(id: i, movie: result!.results[i])
             

@@ -18,6 +18,7 @@
 		886D0E392AD5D0FF00F955CD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D0E382AD5D0FF00F955CD /* ViewModel.swift */; };
 		886D0E3B2AD5EA8600F955CD /* MovieCollectionRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D0E3A2AD5EA8600F955CD /* MovieCollectionRequirement.swift */; };
 		886D0E3D2AD5EA9400F955CD /* MovieInfoRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886D0E3C2AD5EA9400F955CD /* MovieInfoRequirement.swift */; };
+		886D0E402AD5F78B00F955CD /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 886D0E3F2AD5F78B00F955CD /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				886D0E402AD5F78B00F955CD /* SDWebImageSwiftUI in Frameworks */,
 				886D0E362AD5C2A200F955CD /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +157,7 @@
 			name = ExamenMoviles;
 			packageProductDependencies = (
 				886D0E352AD5C2A200F955CD /* Alamofire */,
+				886D0E3F2AD5F78B00F955CD /* SDWebImageSwiftUI */,
 			);
 			productName = ExamenMoviles;
 			productReference = 886D0E172AD5BF2000F955CD /* ExamenMoviles.app */;
@@ -186,6 +189,7 @@
 			mainGroup = 886D0E0E2AD5BF2000F955CD;
 			packageReferences = (
 				886D0E342AD5C2A200F955CD /* XCRemoteSwiftPackageReference "Alamofire" */,
+				886D0E3E2AD5F78B00F955CD /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 886D0E182AD5BF2000F955CD /* Products */;
 			projectDirPath = "";
@@ -431,6 +435,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		886D0E3E2AD5F78B00F955CD /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -438,6 +450,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 886D0E342AD5C2A200F955CD /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		886D0E3F2AD5F78B00F955CD /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 886D0E3E2AD5F78B00F955CD /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
