@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0456D0D0-BF4A-47ED-96F9-41F91B465922"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "94496495-5B32-4FA9-B18A-5F1436412966"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExamenMoviles/Data/Network/NetworkApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getMovieCollection(url:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "94496495-5B32-4FA9-B18A-5F1436412966 - f7c04ccbec11722f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ExamenMoviles.NetworkApiService.getMovieCollection(url: Foundation.URL) async -&gt; Swift.Optional&lt;ExamenMoviles.MovieCollection&gt;"
+                  moduleName = "ExamenMoviles"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sebastianflores/Desktop/ExamenMoviles/ExamenDesarrolloMoviles/ExamenMoviles/ExamenMoviles/Data/Network/NetworkApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "94496495-5B32-4FA9-B18A-5F1436412966 - f7c04ccbec11722f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ExamenMoviles.NetworkApiService.getMovieCollection(url: Foundation.URL) async -&gt; Swift.Optional&lt;ExamenMoviles.MovieCollection&gt;"
+                  moduleName = "ExamenMoviles"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sebastianflores/Desktop/ExamenMoviles/ExamenDesarrolloMoviles/ExamenMoviles/ExamenMoviles/Data/Network/NetworkApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "320">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6AC42CF-8471-44D5-89E0-B3471EFC25CB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExamenMoviles/Data/Network/NetworkApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getMovieCollection(url:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A6AC42CF-8471-44D5-89E0-B3471EFC25CB - f7c04ccbec117588"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ExamenMoviles.NetworkApiService.getMovieCollection(url: Foundation.URL) async -&gt; Swift.Optional&lt;ExamenMoviles.MovieCollection&gt;"
+                  moduleName = "ExamenMoviles"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sebastianflores/Desktop/ExamenMoviles/ExamenDesarrolloMoviles/ExamenMoviles/ExamenMoviles/Data/Network/NetworkApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1372">
+               </Location>
+               <Location
+                  uuid = "A6AC42CF-8471-44D5-89E0-B3471EFC25CB - f7c04ccbec117588"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ExamenMoviles.NetworkApiService.getMovieCollection(url: Foundation.URL) async -&gt; Swift.Optional&lt;ExamenMoviles.MovieCollection&gt;"
+                  moduleName = "ExamenMoviles"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sebastianflores/Desktop/ExamenMoviles/ExamenDesarrolloMoviles/ExamenMoviles/ExamenMoviles/Data/Network/NetworkApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1380">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
