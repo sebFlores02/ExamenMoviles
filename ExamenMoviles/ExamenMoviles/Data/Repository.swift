@@ -7,21 +7,18 @@
 
 import Foundation
 
+/// API url = https://api.themoviedb.org/3/movie/popular
 struct API {
-    static let base = "https://image.tmdb.org/"
     static let baseList = "https://api.themoviedb.org/3/movie/popular"
-
-    struct routes {
-        static let img = "/t/p/original/"
-    }
 }
 
 protocol MovieProtocol {
     func getMovieCollection() async -> MovieCollection?
-    func getMovieInfo(path: String) async -> Movie?
 }
 
 class MovieRepository: MovieProtocol {
+    // Create singleton to be used in Requirement
+
     static let shared = MovieRepository()
 
     let nservice: NetworkApiService
@@ -30,14 +27,11 @@ class MovieRepository: MovieProtocol {
         self.nservice = nservice
     }
 
+    /// @ brief Function that fetches collection of Movies
+    /// return: collection of movies
     func getMovieCollection() async -> MovieCollection? {
         let url = URL(string: "\(API.baseList)")!
         print(url)
         return await nservice.getMovieCollection(url: url)
-    }
-    func getMovieInfo(path: String) async -> Movie? {
-        let url = URL(string: "\(API.base)\(API.routes.img)/\(path)")!
-        print(url)
-        return await nservice.getMovieInfo(url: url)
     }
 }

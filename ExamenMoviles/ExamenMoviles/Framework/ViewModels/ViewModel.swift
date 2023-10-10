@@ -9,45 +9,36 @@ import Foundation
 
 class ContentViewModel: ObservableObject {
     @Published var movieCollection = [MovieBase]()
+    @Published var isLoading = true
+    @Published var error = false
+
+    var movieCollectionRequirement: MovieCollectionRequirement
     
-    var movieCollectionRequirement: MovieInfoRequirement
-    
-    init(movieCollectionRequirement: MovieInfoRequirement = MovieInfoRequirement.shared) {
+    init(movieCollectionRequirement: MovieCollectionRequirement = MovieCollectionRequirement.shared) {
         self.movieCollectionRequirement = movieCollectionRequirement
     }
     
-//    func getUnit() async {
-//        let movieInfo = await movieCollectionRequirement.getMovieInfo(path: "/5gzzkR7y3hnY8AD1wXjCnVlHba5.jpg")
-//        print(movieInfo)
-//        
-//    }
-    
+    /// @brief Function that fetches collection of Movies
+    @MainActor
     func getList() async {
-        let movieRepository = MovieRepository()
-        let result = await movieRepository.getMovieCollection()
+        let result = await movieCollectionRequirement.getMovieCollection()
+        guard result?.results != nil else {
+           error = true
+            return
+        }
         
-        for i in 1...result!.results.count-1 {
-            let movieInfo = await movieRepository.getMovieInfo(path: )
-            print(result)
-
+        for i in 0...result!.results.count-1 {
+            
             let tempMovie = MovieBase(id: i, movie: result!.results[i])
             
             self.movieCollection.append(tempMovie)
-            print(tempMovie)
-            
         }
+        
+        isLoadingFunc()
+    }
+
+    /// @brief Function which turns isLoading off
+    func isLoadingFunc(){
+        isLoading = false
     }
 }
-    
-    
-    //        movieCollection.append(MovieBase(id: 1, movie: Movie(adult: true, backdropPath: "Test", genreIDS: [1], id: 1, originalTitle: "Oppenheimer", overview: "Test", popularity: 2.0, posterPath: "Test", releaseDate: "Test", title: "Oppenheimer", video: true, voteAverage: 2.0, voteCount: 2)))
-    //        movieCollection.append(MovieBase(id: 1, movie: Movie(adult: true, backdropPath: "Test", genreIDS: [1], id: 1, originalTitle: "Oppenheimer", overview: "Test", popularity: 2.0, posterPath: "Test", releaseDate: "Test", title: "Oppenheimer", video: true, voteAverage: 2.0, voteCount: 2)))
-    //        movieCollection.append(MovieBase(id: 1, movie: Movie(adult: true, backdropPath: "Test", genreIDS: [1], id: 1, originalTitle: "Oppenheimer", overview: "Test", popularity: 2.0, posterPath: "Test", releaseDate: "Test", title: "Oppenheimer", video: true, voteAverage: 2.0, voteCount: 2)))
-    //        movieCollection.append(MovieBase(id: 1, movie: Movie(adult: true, backdropPath: "Test", genreIDS: [1], id: 1, originalTitle: "Oppenheimer", overview: "Test", popularity: 2.0, posterPath: "Test", releaseDate: "Test", title: "Oppenheimer", video: true, voteAverage: 2.0, voteCount: 2)))
-    //        movieCollection.append(MovieBase(id: 1, movie: Movie(adult: true, backdropPath: "Test", genreIDS: [1], id: 1, originalTitle: "Oppenheimer", overview: "Test", popularity: 2.0, posterPath: "Test", releaseDate: "Test", title: "Oppenheimer", video: true, voteAverage: 2.0, voteCount: 2)))
-    //        movieCollection.append(MovieBase(id: 1, movie: Movie(adult: true, backdropPath: "Test", genreIDS: [1], id: 1, originalTitle: "Oppenheimer", overview: "Test", popularity: 2.0, posterPath: "Test", releaseDate: "Test", title: "Oppenheimer", video: true, voteAverage: 2.0, voteCount: 2)))
-    //        movieCollection.append(MovieBase(id: 1, movie: Movie(adult: true, backdropPath: "Test", genreIDS: [1], id: 1, originalTitle: "Oppenheimer", overview: "Test", popularity: 2.0, posterPath: "Test", releaseDate: "Test", title: "Oppenheimer", video: true, voteAverage: 2.0, voteCount: 2)))
-    //        movieCollection.append(MovieBase(id: 1, movie: Movie(adult: true, backdropPath: "Test", genreIDS: [1], id: 1, originalTitle: "Oppenheimer", overview: "Test", popularity: 2.0, posterPath: "Test", releaseDate: "Test", title: "Oppenheimer", video: true, voteAverage: 2.0, voteCount: 2)))
-    
-    
-//}

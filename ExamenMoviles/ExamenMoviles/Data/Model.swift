@@ -14,18 +14,12 @@ struct MovieCollection: Codable {
 
 struct Movie: Codable {
     var title: String
+    var backdrop_path: String
+    var original_language: String
+    var overview: String
 }
 
 struct MovieBase: Identifiable {
     var id: Int
     var movie: Movie
-//    var perfil: Perfil
 }
-
-//struct Perfil: Codable {
-//    var sprites: Sprite
-//}
-//
-//struct Sprite: Codable {
-//    var poster_path: String
-//}
