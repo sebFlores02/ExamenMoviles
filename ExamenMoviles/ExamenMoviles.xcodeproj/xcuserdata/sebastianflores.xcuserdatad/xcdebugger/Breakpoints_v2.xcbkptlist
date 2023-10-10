@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "94496495-5B32-4FA9-B18A-5F1436412966"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ExamenMoviles/Data/Network/NetworkApiService.swift"
@@ -49,6 +49,21 @@
                   endingLineNumber = "26"
                   offsetFromSymbolStart = "320">
                </Location>
+               <Location
+                  uuid = "94496495-5B32-4FA9-B18A-5F1436412966 - f7c04ccbec1175ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ExamenMoviles.NetworkApiService.getMovieCollection(url: Foundation.URL) async -&gt; Swift.Optional&lt;ExamenMoviles.MovieCollection&gt;"
+                  moduleName = "ExamenMoviles"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sebastianflores/Desktop/ExamenMoviles/ExamenDesarrolloMoviles/ExamenMoviles/ExamenMoviles/Data/Network/NetworkApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "224">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -56,7 +71,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A6AC42CF-8471-44D5-89E0-B3471EFC25CB"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ExamenMoviles/Data/Network/NetworkApiService.swift"
@@ -96,6 +111,36 @@
                   startingLineNumber = "29"
                   endingLineNumber = "29"
                   offsetFromSymbolStart = "1380">
+               </Location>
+               <Location
+                  uuid = "A6AC42CF-8471-44D5-89E0-B3471EFC25CB - f7c04ccbec1175ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ExamenMoviles.NetworkApiService.getMovieCollection(url: Foundation.URL) async -&gt; Swift.Optional&lt;ExamenMoviles.MovieCollection&gt;"
+                  moduleName = "ExamenMoviles"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sebastianflores/Desktop/ExamenMoviles/ExamenDesarrolloMoviles/ExamenMoviles/ExamenMoviles/Data/Network/NetworkApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "320">
+               </Location>
+               <Location
+                  uuid = "A6AC42CF-8471-44D5-89E0-B3471EFC25CB - f7c04ccbec117588"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ExamenMoviles.NetworkApiService.getMovieCollection(url: Foundation.URL) async -&gt; Swift.Optional&lt;ExamenMoviles.MovieCollection&gt;"
+                  moduleName = "ExamenMoviles"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sebastianflores/Desktop/ExamenMoviles/ExamenDesarrolloMoviles/ExamenMoviles/ExamenMoviles/Data/Network/NetworkApiService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1308">
                </Location>
             </Locations>
          </BreakpointContent>
